@@ -1,0 +1,14 @@
+
+<div class="row">
+    <div *ngFor="let gif of resultados" class="col-md-4 col-sm-6 animate__animated animate__fadeIn"> <!-- https://animate.style/ -->
+        <div class="card">
+            <!-- al fer la consulta a la pàgina web de giphy (o qualsevol altra), li hem d'indicar el [src] entre claudàtors perquè pugui agafar la imatge -->
+            <img [src]="gif.images.downsized_medium.url" [alt]="gif.title">
+            <div class="card-body">
+                <p class="card-text"> <!-- En l'objecte del gif, ve una propietat title -->
+                    {{gif.title}}
+                </p>
+            </div>
+        </div>
+    </div>
+</div>

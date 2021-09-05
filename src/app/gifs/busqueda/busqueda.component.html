@@ -1,0 +1,9 @@
+<h5>Buscar: <small style="font-size: 1rem">(Máximo 10 valores a buscar)</small></h5>
+<p class="text-danger" id="repetido"></p>
+<input 
+        type="text" 
+        class="form-control" 
+        placeholder="Buscar gifs..."
+        (keyup.enter)="buscar()"
+        #txtBuscar
+> <!-- keyup -> quan cliqui enter. Creem una referència, es dirà #txtBuscar -->
